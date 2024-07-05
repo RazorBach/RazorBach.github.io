@@ -1,7 +1,7 @@
 ---
 title: gpt-Aristotle
 date: 2024-07-04 19:05:16
-tags:
+tags: gpt
 ---
 
 
