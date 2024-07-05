@@ -33,9 +33,6 @@ mermaid: ## mermaid url https://github.com/knsv/mermaid
   enable: true
   theme: default
 
-giscus:
-  enable: true
-
 search:
   path: search.xml
   field: post

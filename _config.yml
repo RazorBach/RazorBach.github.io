@@ -126,3 +126,7 @@ math:
         display: false
       tex:
       svg:
+
+# DISQUS comments
+disqus_enabled: true
+disqus_shortname: razorbach

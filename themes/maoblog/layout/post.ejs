@@ -34,24 +34,20 @@
       </div>
   </div>
 </main>
-<% if (theme.giscus.enable) { %>
-<script src="https://giscus.app/client.js"
-        data-repo="maodaisuki/hexo-theme-maoblog"
-        data-repo-id="R_kgDOKICkkw"
-        data-category="Announcements"
-        data-category-id="DIC_kwDOKICkk84CZEWg"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="0"
-        data-emit-metadata="0"
-        data-input-position="top"
-        data-theme="light"
-        data-lang="en"
-        crossorigin="anonymous"
-        async>
-</script>
-<!-- 前往 https://giscus.app 获取配置代码 -->
-<% } %>
+<% if (config.disqus_enabled && config.disqus_shortname){ %>
+  <section id="comments">
+  <div id="disqus_thread"></div>
+  <script>
+  (function() {
+  var d = document, s = d.createElement('script');
+  s.src = 'https://<%= config.disqus_shortname %>.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </section>
+  <% } %>
 <% if (theme.mermaid.enable) { %>
   <%- js('/js/mermaid.min.js') %>
 <% } %>
