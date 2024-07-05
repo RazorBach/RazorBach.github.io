@@ -2,7 +2,7 @@ Razorbach's blog repo
 
 ### Credit
 
-Used [Theme](https://github.com/maodaisuki/hexo-theme-maoblog)
+Credit to [Mao's Theme](https://github.com/maodaisuki/hexo-theme-maoblog)
 
 
 
